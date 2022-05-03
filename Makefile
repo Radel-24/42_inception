@@ -1,22 +1,22 @@
 all:
-	sudo docker-compose -f ./srcs/docker/docker-compose.yml up
+	sudo docker-compose -f ./srcs/docker-compose.yml up
 
 clean:
-	sudo docker-compose -f ./srcs/docker/docker-compose.yml down
+	sudo docker-compose -f ./srcs/docker-compose.yml down
 
 fclean:
-	sudo docker-compose -f ./srcs/docker/docker-compose.yml down --volumes --rmi all
+	sudo docker-compose -f ./srcs/docker-compose.yml down --volumes --rmi all
 
 re: fclean all
 
 nginx:
-	sudo docker-compose -f ./srcs/docker/docker-compose.yml build nginx
+	sudo docker-compose -f ./srcs/docker-compose.yml build nginx
 
 wordpress:
-	sudo docker-compose -f ./srcs/docker/docker-compose.yml build wordpress
+	sudo docker-compose -f ./srcs/docker-compose.yml build wordpress
 
 mariadb:
-	sudo docker-compose -f ./srcs/docker/docker-compose.yml build mariadb
+	sudo docker-compose -f ./srcs/docker-compose.yml build mariadb
 
 build:
-	sudo docker-compose -f ./srcs/docker/docker-compose.yml build
+	sudo docker-compose -f ./srcs/docker-compose.yml build
