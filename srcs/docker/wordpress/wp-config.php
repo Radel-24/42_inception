@@ -20,6 +20,14 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+
+//define( 'DB_NAME', getenv('DB_NAME') );
+
+///** Database username */
+//define( 'DB_USER', getenv('DB_USER') );
+
+///** Database password */
+//define( 'DB_PASSWORD', getenv('DB_PASS') );
 define( 'DB_NAME', 'wordpress_data' );
 
 /** Database username */
@@ -37,8 +45,8 @@ define( 'DB_CHARSET', 'utf8' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
-define( 'WP_HOME', 'http://radelwar.42.fr:500' );
-define( 'WP_SITEURL', 'http://radelwar.42.fr:500' );
+define( 'WP_HOME', 'https://radelwar.42.fr' );
+define( 'WP_SITEURL', 'https://radelwar.42.fr' );
 
 /**#@+
  * Authentication unique keys and salts.
