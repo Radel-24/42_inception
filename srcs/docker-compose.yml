@@ -8,14 +8,14 @@ volumes:
     name: wordpress_dir
     driver: local
     driver_opts:
-      device: /home/inception/data/srcs/requirements/wordpress/content
+      device: /home/radelwar/data/srcs/requirements/wordpress/content
       o: bind
       type: none
   mariadb_dir:
     name: mariadb_dir
     driver: local
     driver_opts:
-      device: /home/inception/data/srcs/requirements/mariadb/database
+      device: /home/radelwar/data/srcs/requirements/mariadb/database
       o: bind
       type: none
 
@@ -32,7 +32,6 @@ services:
   wordpress:
     build:
       context: ./requirements/wordpress
-    #image: wordpress
     volumes:
       - wordpress_dir:/var/www/html
     depends_on:

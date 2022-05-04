@@ -1,4 +1,6 @@
 all:
+	mkdir -p ./srcs/requirements/mariadb/database
+	mkdir -p ./srcs/requirements/wordpress/content
 	sudo docker-compose -f ./srcs/docker-compose.yml up
 
 clean:
